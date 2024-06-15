@@ -13,9 +13,10 @@ dotenv.config();
 connectDB();
 const app = express();
 
+//comment kr dnea 3000 ke saat
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://twist-chatz-1.onrender.com"],
+    origin: ["https://twist-chatz-1.onrender.com"],
   })
 );
 app.use(express.json());
