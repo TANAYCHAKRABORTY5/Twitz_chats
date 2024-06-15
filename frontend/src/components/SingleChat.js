@@ -107,7 +107,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     }
   };
 
-  const PRODUCTION_ENDPOINT = "https://twist-chatz-1.onrender.com";
+  const PRODUCTION_ENDPOINT = "https://twitz-chatsz.onrender.com";
   useEffect(() => {
     socket = io(
       PRODUCTION_ENDPOINT
