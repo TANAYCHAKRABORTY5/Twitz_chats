@@ -14,11 +14,11 @@ connectDB();
 const app = express();
 
 //comment kr dnea 3000 ke saat
-app.use(
-  cors({
-    origin: ["https://twist-chatz-1.onrender.com"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: ["https://twist-chatz-1.onrender.com"],
+//   })
+// );
 app.use(express.json());
 
 app.use("/api/user", userRoutes);
@@ -56,7 +56,7 @@ const server = app.listen(
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: ["http://localhost:3000", "https://twist-chatz-1.onrender.com"],
+    origin: ["https://twist-chatz-1.onrender.com", "http://localhost:3000"],
   },
 });
 

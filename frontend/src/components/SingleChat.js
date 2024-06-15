@@ -18,7 +18,6 @@ import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import io from "socket.io-client";
 
 const ENDPOINT = "http://localhost:5000";
-const PRODUCTION_ENDPOINT = "https://twist-chatz-1.onrender.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -108,6 +107,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     }
   };
 
+  const PRODUCTION_ENDPOINT = "https://twist-chatz-1.onrender.com";
   useEffect(() => {
     socket = io(
       PRODUCTION_ENDPOINT
